@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const num1 = function number(){
+       document.getElementById("click").innerHTML = "THis is text After the click with JS";
+    }
+    const num2 = function number(){
+        alert("THis is an warning mesage");
+    }
+   
+    function getm(){
+        const d = new Date();
+        const x = "THis is time "+d.getDay()+"hour"+d.getHours()+"min"+d.getMinutes()
+        document.getElementById('click').innerHTML=x;
+    }
+   
+function nedate() {
+    document.getElementById('click').innerHTML = Date();
+}
+</script>
+<body>
+    <p id="click">Hey, This is a passage before the JS applied to it</p>
+    <button value="23" onclick="number()">Hey, This is a passage before the JS applied to it</button>
+
+    <button onclick="num2()"> Click</button><br>
+    <input type="text" value="Num1">Number1<br>
+    <input type="text" value="Num2">Number2<br>
+    <button type="submit"  value="click"> Submit</button> <br>
+    <button type="submit"  onclick="getm()">submit</button>
+
+    
+    
+</body>
+</html>
