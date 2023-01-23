@@ -25,6 +25,12 @@ for(const [key,val] of Object.entries(v)){
     console.log(key);
     console.log(val);
 }
+let vall;
+for(key of Object.entries(v)){
+    console.log('keys are',key);
+    
+
+}
 
 //functions
 
